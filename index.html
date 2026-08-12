@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#090b13" />
+  <meta name="robots" content="noindex,nofollow,noarchive" />
+  <title>ForMAI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <section class="rotate-gate" id="rotateGate" aria-live="polite">
+    <div class="rotate-icon" aria-hidden="true">
+      <div class="phone-shape"><span></span></div>
+      <div class="rotate-arrow">↻</div>
+    </div>
+    <h1>اقلبي الموبايل بالعرض</h1>
+  </section>
+
+  <section class="unlock-gate" id="unlockGate">
+    <div class="unlock-inner" id="unlockInner">
+      <p class="unlock-title">اكتبي كلمة انا اتعديت منك فيها وبقيت اقولها كتير</p>
+      <form class="unlock-form" id="unlockForm" autocomplete="off">
+        <input class="unlock-input" id="unlockInput" type="password" inputmode="text" autocomplete="off" autocapitalize="none" spellcheck="false" aria-label="الكلمة" placeholder="الكلمة" />
+        <button class="unlock-submit" type="submit">دخول</button>
+      </form>
+      <p class="unlock-error" id="unlockError" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <main class="experience" id="experience">
+    <section class="letter started" id="letter" aria-live="polite" aria-busy="false">
+      <div class="letter-column" id="letterColumn"></div>
+      <div class="end-space" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <template id="codeTemplate">
+    <div class="code-wrap" dir="ltr">
+      <div class="code-topbar">
+        <span class="code-dot"></span><span class="code-dot"></span><span class="code-dot"></span>
+        <span class="code-name">mai.swift</span>
+      </div>
+      <pre class="code-block"><code></code></pre>
+    </div>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
